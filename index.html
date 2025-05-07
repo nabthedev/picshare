@@ -1,1 +1,39 @@
-<!-- index.html: Main page showing all uploaded images -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PicShared</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PicShared</h1>
+
+  <div id="auth-section">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username">
+    <input type="password" id="login-password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <h2>Register</h2>
+    <input type="text" id="register-username" placeholder="Username">
+    <input type="password" id="register-password" placeholder="Password">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div id="upload-section" style="display: none;">
+    <h2>Upload Image</h2>
+    <input type="text" id="image-title" placeholder="Title">
+    <textarea id="image-desc" placeholder="Description"></textarea>
+    <input type="file" id="image-file">
+    <button onclick="uploadImage()">Upload</button>
+    <button onclick="logout()">Logout</button>
+
+    <h3>All Uploaded Images</h3>
+    <div id="image-list"></div>
+  </div>
+
+  <script src="utils.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
