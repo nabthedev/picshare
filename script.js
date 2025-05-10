@@ -1,6 +1,7 @@
 // script.js
 
-const API_URL = "http://localhost:3000"; // Change this if your backend uses a different port
+const API_URL = "http://localhost:5000";
+
 
 window.onload = () => {
   const token = getToken();
